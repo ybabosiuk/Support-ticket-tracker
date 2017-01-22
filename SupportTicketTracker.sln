@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupportTicketTracker.Core", "SupportTicketTracker.Core\SupportTicketTracker.Core.csproj", "{A467AFE0-3F74-4A5F-994C-66DDA5570675}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupportTicketTracker.Droid", "SupportTicketTracker\SupportTicketTracker.Droid.csproj", "{7538AD70-78BF-460D-B41F-554D1524A403}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A467AFE0-3F74-4A5F-994C-66DDA5570675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A467AFE0-3F74-4A5F-994C-66DDA5570675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A467AFE0-3F74-4A5F-994C-66DDA5570675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A467AFE0-3F74-4A5F-994C-66DDA5570675}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7538AD70-78BF-460D-B41F-554D1524A403}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7538AD70-78BF-460D-B41F-554D1524A403}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7538AD70-78BF-460D-B41F-554D1524A403}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7538AD70-78BF-460D-B41F-554D1524A403}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
