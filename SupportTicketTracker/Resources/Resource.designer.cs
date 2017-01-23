@@ -1705,8 +1705,20 @@ namespace SupportTicketTracker
 			// aapt resource value: 0x7f0b0024
 			public const int bottom = 2131427364;
 			
+			// aapt resource value: 0x7f0b0069
+			public const int button = 2131427433;
+			
 			// aapt resource value: 0x7f0b0030
 			public const int buttonPanel = 2131427376;
+			
+			// aapt resource value: 0x7f0b0068
+			public const int button_high = 2131427432;
+			
+			// aapt resource value: 0x7f0b0066
+			public const int button_low = 2131427430;
+			
+			// aapt resource value: 0x7f0b0067
+			public const int button_medium = 2131427431;
 			
 			// aapt resource value: 0x7f0b0057
 			public const int cancel_action = 2131427415;
@@ -1831,8 +1843,8 @@ namespace SupportTicketTracker
 			// aapt resource value: 0x7f0b0038
 			public const int scrollView = 2131427384;
 			
-			// aapt resource value: 0x7f0b0065
-			public const int search = 2131427429;
+			// aapt resource value: 0x7f0b006a
+			public const int search = 2131427434;
 			
 			// aapt resource value: 0x7f0b004b
 			public const int search_badge = 2131427403;
@@ -1906,8 +1918,8 @@ namespace SupportTicketTracker
 			// aapt resource value: 0x7f0b000d
 			public const int tabMode = 2131427341;
 			
-			// aapt resource value: 0x7f0b0066
-			public const int temp_delete = 2131427430;
+			// aapt resource value: 0x7f0b006b
+			public const int temp_delete = 2131427435;
 			
 			// aapt resource value: 0x7f0b0060
 			public const int text = 2131427424;
@@ -1917,6 +1929,9 @@ namespace SupportTicketTracker
 			
 			// aapt resource value: 0x7f0b0039
 			public const int textSpacerNoButtons = 2131427385;
+			
+			// aapt resource value: 0x7f0b0065
+			public const int textView2 = 2131427429;
 			
 			// aapt resource value: 0x7f0b005c
 			public const int time = 2131427420;

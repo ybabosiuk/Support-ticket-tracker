@@ -26,8 +26,16 @@ namespace SupportTicketTracker.Core.ViewModels
 		public string Filter
 		{
 			get { return _filter; }
-			set { SetProperty(ref _filter, value);
-				SearchCommand.Execute();
+			set {
+				if (value.Length >= 3)
+				{
+					SetProperty(ref _filter, value);
+					SearchCommand.Execute();
+				}
+				else {
+					_filter = "";
+					SearchCommand.Execute();
+				}
 			}
 		}
 

@@ -1,3 +1,101 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Problem name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:minLines="1"
+            android:maxLines="3"
+            android:hint="Please add the problem name" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Priority"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textView2" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:id="@+id/button_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Low"
+            android:textSize="15sp"
+            android:layout_margin="5dp"
+            android:gravity="center" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            local:MvxBind="BackgroundColor NativeColor(Low)"
+            android:visibility="invisible"
+            android:layout_alignBottom="@+id/button_low"
+            android:layout_alignStart="@+id/button_low"
+            android:layout_alignEnd="@+id/button_low" />
+        <Button
+            android:id="@+id/button_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium"
+            android:textSize="15sp"
+            android:layout_margin="5dp"
+            android:layout_toEndOf="@+id/button_low"
+            android:gravity="center" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            local:MvxBind="BackgroundColor NativeColor(Medium)"
+            android:visibility="invisible"
+            android:layout_alignBottom="@+id/button_medium"
+            android:layout_alignStart="@+id/button_medium"
+            android:layout_alignEnd="@+id/button_medium" />
+        <Button
+            android:id="@+id/button_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High"
+            android:textSize="15sp"
+            android:layout_margin="5dp"
+            android:layout_toEndOf="@+id/button_medium"
+            android:gravity="center" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            local:MvxBind="BackgroundColor NativeColor(High)"
+            android:visibility="invisible"
+            android:layout_alignBottom="@+id/button_high"
+            android:layout_alignStart="@+id/button_high"
+            android:layout_alignEnd="@+id/button_high" />
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="Save"
+        android:id="@+id/button" />
 </LinearLayout>
