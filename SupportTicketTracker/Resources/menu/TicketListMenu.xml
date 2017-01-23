@@ -11,4 +11,9 @@
 		android:title="Add"
 		android:showAsAction="always"
 		android:icon="@drawable/ic_add" />
+	<item 
+        android:id="@+id/temp_delete"
+        android:title="temp_delete"
+        android:showAsAction="always"
+        />
 </menu>

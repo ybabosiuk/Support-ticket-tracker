@@ -22,6 +22,6 @@ namespace SupportTicketTracker.Core
 
 		public string Description { get; set;}
 
-		//public int CurrentColor { get; set;}
+		public int CurrentColor { get; set;}
 	}
 }

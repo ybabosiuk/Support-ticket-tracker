@@ -101,6 +101,3 @@ iOSInjectionProject/
 # Xamarin C#
 mobile/meetfriends/obj
 mobile/meetfriends/bin
-
-*.dll
-*.dll.mdb

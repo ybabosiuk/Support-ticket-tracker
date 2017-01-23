@@ -55,6 +55,13 @@ namespace SupportTicketTracker.Core.ViewModels
 			}
 		}
 
+        public IMvxCommand GoToTicketManagerCommand
+        {
+            get {
+                return new MvxCommand(() => ShowViewModel<TicketManagerViewModel>());
+            }
+        }
+
 		void DoSearch()
 		{
 			Tickets = _dataService.SearchByDescription(Filter);
@@ -75,7 +82,7 @@ namespace SupportTicketTracker.Core.ViewModels
 				Id = 1,
 				Description = "Some Desription" + value.Next().ToString(),
 				Priority = Ticket.priority.High,
-				//CurrentColor = new MvxColor(121, 196, 69).ARGB
+				CurrentColor = new MvxColor(121, 196, 69).ARGB
 			};
 
 			_dataService.Save(ticket);

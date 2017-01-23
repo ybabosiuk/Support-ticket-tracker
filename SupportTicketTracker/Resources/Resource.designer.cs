@@ -47,6 +47,10 @@ namespace SupportTicketTracker
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView = global::SupportTicketTracker.Resource.Styleable.MvxListView;
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::SupportTicketTracker.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxItemTemplate = global::SupportTicketTracker.Resource.Styleable.MvxListView_MvxItemTemplate;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::SupportTicketTracker.Resource.String.ApplicationName;
+			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::SupportTicketTracker.Resource.String.Hello;
+			global::MvvmCross.Plugins.Sqlite.Droid.Resource.String.ApplicationName = global::SupportTicketTracker.Resource.String.ApplicationName;
+			global::MvvmCross.Plugins.Sqlite.Droid.Resource.String.Hello = global::SupportTicketTracker.Resource.String.Hello;
 			global::MvvmCross.Droid.Support.Core.UI.Resource.String.library_name = global::SupportTicketTracker.Resource.String.library_name;
 			global::MvvmCross.Droid.Support.Fragment.Resource.Attribute.MvxBind = global::SupportTicketTracker.Resource.Attribute.MvxBind;
 			global::MvvmCross.Droid.Support.Fragment.Resource.Attribute.MvxDropDownItemTemplate = global::SupportTicketTracker.Resource.Attribute.MvxDropDownItemTemplate;
@@ -70,10 +74,6 @@ namespace SupportTicketTracker
 			global::MvvmCross.Droid.Support.Fragment.Resource.Styleable.MvxListView = global::SupportTicketTracker.Resource.Styleable.MvxListView;
 			global::MvvmCross.Droid.Support.Fragment.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::SupportTicketTracker.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
 			global::MvvmCross.Droid.Support.Fragment.Resource.Styleable.MvxListView_MvxItemTemplate = global::SupportTicketTracker.Resource.Styleable.MvxListView_MvxItemTemplate;
-			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::SupportTicketTracker.Resource.String.ApplicationName;
-			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::SupportTicketTracker.Resource.String.Hello;
-			global::MvvmCross.Plugins.Sqlite.Droid.Resource.String.ApplicationName = global::SupportTicketTracker.Resource.String.ApplicationName;
-			global::MvvmCross.Plugins.Sqlite.Droid.Resource.String.Hello = global::SupportTicketTracker.Resource.String.Hello;
 		}
 		
 		public partial class Animation
@@ -1906,6 +1906,9 @@ namespace SupportTicketTracker
 			// aapt resource value: 0x7f0b000d
 			public const int tabMode = 2131427341;
 			
+			// aapt resource value: 0x7f0b0066
+			public const int temp_delete = 2131427430;
+			
 			// aapt resource value: 0x7f0b0060
 			public const int text = 2131427424;
 			
@@ -2103,6 +2106,9 @@ namespace SupportTicketTracker
 			// aapt resource value: 0x7f040028
 			public const int TicketList = 2130968616;
 			
+			// aapt resource value: 0x7f040029
+			public const int TicketManager = 2130968617;
+			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -2148,11 +2154,11 @@ namespace SupportTicketTracker
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f060022
-			public const int ApplicationName = 2131099682;
+			// aapt resource value: 0x7f060023
+			public const int ApplicationName = 2131099683;
 			
-			// aapt resource value: 0x7f060021
-			public const int Hello = 2131099681;
+			// aapt resource value: 0x7f060022
+			public const int Hello = 2131099682;
 			
 			// aapt resource value: 0x7f060000
 			public const int abc_action_bar_home_description = 2131099648;
@@ -2253,8 +2259,8 @@ namespace SupportTicketTracker
 			// aapt resource value: 0x7f060024
 			public const int hello = 2131099684;
 			
-			// aapt resource value: 0x7f060023
-			public const int library_name = 2131099683;
+			// aapt resource value: 0x7f060021
+			public const int library_name = 2131099681;
 			
 			// aapt resource value: 0x7f060027
 			public const int search_hint = 2131099687;

@@ -42,8 +42,11 @@ namespace SupportTicketTracker.Views
 			switch (item.ItemId)
 			{
 				case Resource.Id.add:
-					((TicketListViewModel)ViewModel).InsertCommand.Execute();
+					((TicketListViewModel)ViewModel).GoToTicketManagerCommand.Execute();
 					break;
+                case Resource.Id.temp_delete:
+                    ((TicketListViewModel)ViewModel).InsertCommand.Execute();
+                    break;
 			}
 
 			return base.OnOptionsItemSelected(item);
