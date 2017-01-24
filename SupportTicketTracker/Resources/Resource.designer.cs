@@ -1918,9 +1918,6 @@ namespace SupportTicketTracker
 			// aapt resource value: 0x7f0b000d
 			public const int tabMode = 2131427341;
 			
-			// aapt resource value: 0x7f0b006b
-			public const int temp_delete = 2131427435;
-			
 			// aapt resource value: 0x7f0b0060
 			public const int text = 2131427424;
 			

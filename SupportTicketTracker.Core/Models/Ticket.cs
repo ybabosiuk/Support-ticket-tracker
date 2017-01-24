@@ -12,16 +12,16 @@ namespace SupportTicketTracker.Core
 		[Indexed]
 		public int TicketId { get; set;}
 
-		public enum priority
+		public enum Priority
 		{
 			High,
 			Medium,
 			Low
 		};
-		public priority Priority { get; set;}
+		//public priority Priority { get; set;}
 
 		public string Description { get; set;}
 
-		public int CurrentColor { get; set;}
+		public int PriorityColor { get; set;}
 	}
 }

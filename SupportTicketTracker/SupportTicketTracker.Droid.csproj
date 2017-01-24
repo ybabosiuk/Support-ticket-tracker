@@ -129,6 +129,12 @@
     <Reference Include="Xamarin.Android.Support.v4">
       <HintPath>..\packages\Xamarin.Android.Support.v4.24.2.1\lib\MonoAndroid70\Xamarin.Android.Support.v4.dll</HintPath>
     </Reference>
+    <Reference Include="MvvmCross.Plugins.Visibility">
+      <HintPath>..\packages\MvvmCross.Plugin.Visibility.4.4.0\lib\MonoAndroid\MvvmCross.Plugins.Visibility.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmCross.Plugins.Visibility.Droid">
+      <HintPath>..\packages\MvvmCross.Plugin.Visibility.4.4.0\lib\MonoAndroid\MvvmCross.Plugins.Visibility.Droid.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Resources\Resource.designer.cs" />
@@ -141,6 +147,7 @@
     <Compile Include="Bootstrap\SqlitePluginBootstrap.cs" />
     <Compile Include="Bootstrap\ColorPluginBootstrap.cs" />
     <Compile Include="Views\TicketManagerView.cs" />
+    <Compile Include="Bootstrap\VisibilityPluginBootstrap.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

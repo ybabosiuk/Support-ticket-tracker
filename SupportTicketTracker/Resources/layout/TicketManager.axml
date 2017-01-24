@@ -22,7 +22,8 @@
             android:layout_marginTop="10dp"
             android:minLines="1"
             android:maxLines="3"
-            android:hint="Please add the problem name" />
+            android:hint="Please add the problem name"
+            local:MvxBind="Text ProblemDescription" />
     </LinearLayout>
     <TextView
         android:layout_width="match_parent"
@@ -42,13 +43,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Low"
+            local:MvxBind="Click LowCommand"
+            android:enabled="true"
             android:textSize="15sp"
             android:layout_margin="5dp"
             android:gravity="center" />
         <View
             android:layout_width="wrap_content"
             android:layout_height="2dp"
-            local:MvxBind="BackgroundColor NativeColor(Low)"
+            local:MvxBind="BackgroundColor NativeColor(Low); Visibility Visibility(LowVisibility)"
             android:visibility="invisible"
             android:layout_alignBottom="@+id/button_low"
             android:layout_alignStart="@+id/button_low"
@@ -57,6 +60,7 @@
             android:id="@+id/button_medium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            local:MvxBind="Click MediumCommand"
             android:text="Medium"
             android:textSize="15sp"
             android:layout_margin="5dp"
@@ -65,7 +69,7 @@
         <View
             android:layout_width="wrap_content"
             android:layout_height="2dp"
-            local:MvxBind="BackgroundColor NativeColor(Medium)"
+            local:MvxBind="BackgroundColor NativeColor(Medium); Visibility Visibility(MediumVisibility)"
             android:visibility="invisible"
             android:layout_alignBottom="@+id/button_medium"
             android:layout_alignStart="@+id/button_medium"
@@ -74,6 +78,7 @@
             android:id="@+id/button_high"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            local:MvxBind="Click HighCommand"
             android:text="High"
             android:textSize="15sp"
             android:layout_margin="5dp"
@@ -82,7 +87,7 @@
         <View
             android:layout_width="wrap_content"
             android:layout_height="2dp"
-            local:MvxBind="BackgroundColor NativeColor(High)"
+            local:MvxBind="BackgroundColor NativeColor(High); Visibility Visibility(HighVisibility)"
             android:visibility="invisible"
             android:layout_alignBottom="@+id/button_high"
             android:layout_alignStart="@+id/button_high"
@@ -97,5 +102,6 @@
         android:textSize="15dp"
         android:textStyle="bold"
         android:text="Save"
+        local:MvxBind="Click SaveCommand"
         android:id="@+id/button" />
 </LinearLayout>

@@ -61,6 +61,9 @@
     <Reference Include="MvvmCross.Localization">
       <HintPath>..\packages\MvvmCross.Binding.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Localization.dll</HintPath>
     </Reference>
+    <Reference Include="MvvmCross.Plugins.Visibility">
+      <HintPath>..\packages\MvvmCross.Plugin.Visibility.4.4.0\lib\portable-net45+win+wpa81+wp80\MvvmCross.Plugins.Visibility.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Services\" />

@@ -89,8 +89,8 @@ namespace SupportTicketTracker.Core.ViewModels
 				
 				Id = 1,
 				Description = "Some Desription" + value.Next().ToString(),
-				Priority = Ticket.priority.High,
-				CurrentColor = new MvxColor(121, 196, 69).ARGB
+				//Priority = Ticket.Priority.High,
+				PriorityColor = new MvxColor(121, 196, 69).ARGB
 			};
 
 			_dataService.Save(ticket);

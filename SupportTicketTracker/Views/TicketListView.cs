@@ -16,9 +16,13 @@ namespace SupportTicketTracker.Views
         {
             base.OnCreate(bundle);
 			SetContentView(Resource.Layout.TicketList);
-
-			((TicketListViewModel)ViewModel).LoadCommand.Execute();
         }
+
+		protected override void OnResume()
+		{
+			base.OnResume();
+			((TicketListViewModel)ViewModel).LoadCommand.Execute();
+		}
 
 		public override bool OnCreateOptionsMenu(Android.Views.IMenu menu)
 		{
@@ -44,9 +48,6 @@ namespace SupportTicketTracker.Views
 				case Resource.Id.add:
 					((TicketListViewModel)ViewModel).GoToTicketManagerCommand.Execute();
 					break;
-                case Resource.Id.temp_delete:
-                    ((TicketListViewModel)ViewModel).InsertCommand.Execute();
-                    break;
 			}
 
 			return base.OnOptionsItemSelected(item);
